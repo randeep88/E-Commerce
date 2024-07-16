@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+section {
+    padding: 0 90px;
+    box-shadow: 0 1px 8px rgb(65, 65, 65);
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 999;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu ul li a:hover,
+.menu ul li a.activeShop {
+    color: #219ebc;
+    transition: 0.3s ease;
+}
+
+.menu ul li a.activeShop::after,
+.menu ul li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #219ebc;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 25px;
+    position: relative;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-image {
+    margin: 50px 50px 50px 100px;
+}
+
+.product-details {
+    width: 60vw;
+    /* border: 1px solid black; */
+
+}
+
+
+.product-image img {
+    width: 400px;
+}
+
+.product-details p{
+    padding-bottom: 50px;
+}
+
+.product-details h2{
+    padding-bottom: 40px;
+}
+
+.product-details h1{
+    padding-bottom: 10px;
+}
+
+.product-details select{
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.product-details input{
+    padding:7px;
+    font-size: 25px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.product-details button{
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    background: #219ebc;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.product-details button:hover {
+    background: hsl(192, 70%, 38%);
+    transition: all 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.product-details h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.news {
+    margin-top: 100px;
+    background: rgb(0, 0, 112);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+}
+
+.sign h1{
+    text-align: left;
+    margin-left: -155px;
+    font-size: 35px;
+} 
+
+.sign p {
+    color: grey;
+}
+
+.email {
+    display: flex;
+}
+
+.email input{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+}
+
+.email button {
+    width: 100px;
+    height: 40px;
+    margin-left: 2px;
+    border-radius: 3px;
+    border: none;
+    background: gold;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email button:active {
+    background: rgb(183, 131, 0);
+}
+
+.col ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#heading {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#follow {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.fa-brands {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row img {
+    width: 150px;
+    margin: 10px 5px 10px 0px;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 img {
+    width: 130px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}

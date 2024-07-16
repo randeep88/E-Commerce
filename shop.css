@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kodchasan;
+}
+
+section {
+    padding: 0 90px;
+    box-shadow: 0 1px 8px rgb(65, 65, 65);
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 999;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu ul li a:hover,
+.menu ul li a.activeShop {
+    color: #219ebc;
+    transition: 0.3s ease;
+}
+
+.menu ul li a.activeShop::after,
+.menu ul li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #219ebc;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 25px;
+    position: relative;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+}
+
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: -100px;
+    background: url('/pictures/pic.jpg');
+    background-size: cover;
+    background-position: 50% 50%;    
+}
+
+.left {
+    margin-left: 300px;
+}
+.explore p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.explore h1 {
+    font-size: 40px;
+}
+
+.explore button {
+    color: black;
+    background: white;
+    padding: 15px;
+    width: 160px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.explore button:hover {
+    background: #d3d3d3;
+    transition: 0.2s ease;
+} 
+
+.explore button:active {
+    box-shadow: 1px 1px 6px black;
+} 
+
+.products {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 80px;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.shirt-box {
+    border: 0.5px solid rgb(176, 176, 176);
+    height: 520px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    position: relative;
+    transition:all 0.2s ease-in-out;
+}
+
+.shirt-box:hover {
+    box-shadow: 0.5px 0.5px 10px black;
+    scale: 1.01;
+}
+
+.image-shirt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.image-shirt img {
+    border-radius: 19px;
+    width: 280px;
+}
+
+.text-shirt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 135px;
+}
+
+.text-shirt p {
+    font-size: 13px;
+}
+
+.text-shirt h1{
+    font-size: 20px;
+}
+
+.text-shirt button {
+    background: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text-shirt button:hover {
+    scale: 1.3;
+    transition: 0.1s ease;
+}
+
+.text-shirt button:active {
+    scale: 1;
+    transition: 0.1s ease;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+}
+
+.rating {
+    display: flex;
+    margin: 5px 0px 10px 0px;
+    color: #FDCC0D;
+}
+
+.news {
+    margin-top: 100px;
+    background: rgb(0, 0, 112);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+}
+
+.sign h1{
+    text-align: left;
+    margin-left: -155px;
+    font-size: 35px;
+} 
+
+.sign p {
+    color: grey;
+}
+
+.email {
+    display: flex;
+}
+
+.email input{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+}
+
+.email button {
+    width: 100px;
+    height: 40px;
+    margin-left: 2px;
+    border-radius: 3px;
+    border: none;
+    background: gold;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email button:active {
+    background: rgb(183, 131, 0);
+}
+
+.col ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#heading {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#follow {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.fa-brands {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row img {
+    width: 150px;
+    margin: 10px 5px 10px 0px;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 img {
+    width: 130px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}

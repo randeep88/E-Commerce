@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kodchasan;
+}
+
+section {
+    padding: 0 90px;
+    box-shadow: 0 1px 8px rgb(65, 65, 65);
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 999;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: #219ebc;
+    transition: 0.3s ease;
+}
+
+.menu ul li a.active::after,
+.menu ul li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #219ebc;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 25px;
+    position: relative;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+}
+
+.hero {
+    background: url('./pictures/cover5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 99vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-in {
+    padding-left: 200px;
+}
+
+.hero h1,
+h4,
+p {
+    scale: 1.5;
+    padding-bottom: 15px;
+}
+
+#btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0.5px 0.5px 3px rgb(154, 154, 154);
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+#btn:hover {
+    background: #219ebc;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#btn:active {
+    box-shadow: 1px 1px 6px black;
+}
+
+.featured {
+    margin-top: 55px;
+    width: 99vw;
+    height: 50vh;
+}
+
+.content {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.content h1,
+p {
+    scale: 1.5;
+    line-height: 50px;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.images {
+    width: 150px;
+    height: 150px;
+}
+
+.text h3 {
+    text-align: center;
+}
+
+.products, .products-2{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 80px;
+    row-gap: 50px;
+    margin-top: 30px;
+    justify-content: center;
+    width: 99vw;
+    /* border: 2px solid black; */
+}
+
+.shirt-box {
+    border: 0.5px solid rgb(176, 176, 176);
+    height: 520px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.shirt-box:hover {
+    box-shadow: 0.5px 0.5px 10px black;
+    scale: 1.01;
+}
+
+.image-shirt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.image-shirt img {
+    border-radius: 19px;
+    width: 280px;
+}
+
+.text-shirt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 135px;
+}
+
+.text-shirt #company {
+    font-size: 10px;
+    margin-bottom: -30px;
+}
+
+.text-shirt h1 {
+    font-size: 20px;
+}
+
+.text-shirt p {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.text-shirt button {
+    background: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text-shirt button:hover {
+    scale: 1.3;
+    transition: 0.1s ease;
+}
+
+.text-shirt button:active {
+    scale: 1;
+    transition: 0.1s ease;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+}
+
+.rating {
+    display: flex;
+    margin: 5px 0px 10px 0px;
+    color: #FDCC0D;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    background: url('./pictures/glasss.jpg');
+    background-size: cover;
+    
+}
+
+.explore p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.explore h1 {
+    font-size: 35px;
+}
+
+.explore button {
+    color: black;
+    background: white;
+    padding: 15px;
+    width: 160px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.explore button:hover {
+    background: #d3d3d3;
+    transition: 0.2s ease;
+} 
+
+.explore button:active {
+    box-shadow: 1px 1px 6px black;
+} 
+
+.text-shirt span{
+    color: rgb(0, 190, 0);
+    font-weight: 700;
+}
+
+.banner {
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    column-gap: 60px;
+    justify-content: center;
+}
+
+.banner-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 30px;
+    height: 350px;
+    background: url('./pictures/b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+
+}
+
+.banner-1 h4{
+    margin-left: 25px;
+}
+
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 30px;
+    height: 350px;
+    border: 2px solid black;
+    background: url('./pictures/b2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+}
+
+.banner-2 h4{
+    margin-left: 35px;
+}
+
+.banner-1 button {
+    background: #0400ff;
+    padding: 10px;
+    color: white;
+    width: 100px;  
+    border: none;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+.banner-2 button {
+    background: transparent;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+.banner-1 h1, .banner-2 h1 {
+    margin-bottom: 10px;
+}
+
+.banner-1 h4, .banner-2 h4 {
+    margin-bottom: -10px;
+}
+
+.br3 {
+    display: grid;
+    grid-template-columns: 26.4vw 26.4vw 26.4vw;
+    justify-content: center;
+    column-gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.br {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+}
+
+#season {
+    background: url('./pictures/season.jpg');
+    background-size: cover;
+}
+
+#footwear {
+    background: url('./pictures/footwear.jpg');
+    background-size: cover;
+}
+
+#shirt {
+    background: url('./pictures/shirt.jpg');
+    background-size: cover;
+}
+
+.news {
+    margin-top: 100px;
+    background: rgb(0, 0, 112);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+}
+
+.sign h1{
+    text-align: left;
+    margin-left: -155px;
+    font-size: 35px;
+} 
+
+.sign p {
+    color: grey;
+}
+
+.email {
+    display: flex;
+}
+
+.email input{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+}
+
+.email button {
+    width: 100px;
+    height: 40px;
+    margin-left: 2px;
+    border-radius: 3px;
+    border: none;
+    background: gold;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email button:active {
+    background: rgb(183, 131, 0);
+}
+
+.col ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#heading {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#follow {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.fa-brands {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row img {
+    width: 150px;
+    margin: 10px 5px 10px 0px;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 img {
+    width: 130px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}

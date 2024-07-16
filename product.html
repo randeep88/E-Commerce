@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="logo">
+      <a style="text-decoration: none; color: black" href="index.html"
+        ><h1 style="font-size: 30px">ShopUs</h1></a
+      >
+
+      <div class="menu">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="activeShop" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+     
+    <div class="product">
+        <div class="product-image">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20231124/mmCL/6560cf42ddf77915199a43e6/-473Wx593H-466823595-black-MODEL.jpg" alt="">
+        </div>
+        <div class="product-details">
+            <p>Home/T-Shirt</p>
+            <h2>Men's Fashion T-Shirt</h2>
+            <h1>₹480</h1>
+            <select id="size">
+              <option value="">Select a size</option>
+              <option value="">XS</option>
+              <option value="">S</option>
+              <option value="">M</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+              <option value="">XXL</option>
+            </select>
+            <br>
+            <div class="buttons">
+              <input type="text" id="cart-number">
+              <button id="btn" onclick="cart = cart+1"
+              cart.innerHTML.value = '0';>Add To Cart</button>
+            </div>
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi quam eligendi delectus id repellendus tempora ad hic, omnis enim nam iste, itaque reprehenderit eius placeat assumenda sed quo. Nulla, natus in saepe sunt sint veritatis suscipit aliquid itaque harum deserunt recusandae at iusto exercitationem tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste veniam totam cumque perspiciatis amet fugit beatae eius quisquam eaque!</p>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="sign">
+          <h1>Sign Up For Newsletters</h1>
+          <p style="font-size: 13px;">Get E-mail updates about our latest shop and <span style="color: gold;">special offers</span></p>
+        </div>
+        <div class="email">
+          <input type="text" placeholder="Enter your E-mail address">
+          <button>Sign Up</button>
+        </div>
+      </div>
+  
+      <div class="footer">
+        <div class="col">
+          <ul>
+            <li id="heading">Contact</li>
+            <li>Address: Baba Farid Group of Institutions, Deon, Bathinda</li>
+            <li>Phone: 7206007458</li>
+  
+            <li id="follow">Follow Us:</li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <ul>
+            <li id="heading">About</li>
+            <a href=""><li>About Us</li></a>
+            <a href=""><li>Delivery Information</li></a>
+            <a href=""><li>Privacy Policy</li></a>
+            <a href=""><li>Terms & Conditions</li></a>
+            <a href=""><li>Contact Us</li></a>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <ul>
+            <li id="heading" >My Account</li>
+            <a href=""><li>Sign In</li></a>
+            <a href=""><li>View Cart<li></a>
+            <a href=""><li>My Wishlist</li></a>
+            <a href=""><li>Track My Order</li></a>
+            <a href=""><li>Help</li></a>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <ul>
+            <li id="heading" >Install App</li>
+            <a href=""><li>From App Store or Google Pay</li></a>
+            <div class="row">
+              <img src="app.png">
+              <img src="play.png">
+            </div>
+            <a href=""><li>Secured Payment Gateways</li></a>
+            <div class="row-2">
+              <img src="card.png">
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+        const cart = document.getElementById("cart-number").innerHTML.value;
+      </script>
+    </body>
+
+
